@@ -17,19 +17,7 @@ public class Practice_01_02 {
     public static void main(String[] args) {
         String str = "AABBDDEE"; // expected result: ABDE
         String result1 = ""; // store non duplicates
-        // result: "ABDE"
-        for (int i = 0; i < str.length(); i++) {
-            /*
-            if( ! result1.contains(str.substring(i, i+1)) ) {
-                 result1 += str.substring(i, i + 1);
-                 //                      (0, 1) ==>A at index 0
-                //                       (1, 2)  ==> A at index 1
-            }
-             */
-            if (!result1.contains("" + str.charAt(i))) {
-                result1 += "" + str.charAt(i);
-            }
-        }
+
         String str2 = "CCDDEE";
         System.out.println(result1);
         System.out.println(RemoveDup("MMMNNNBBBCCCC"));

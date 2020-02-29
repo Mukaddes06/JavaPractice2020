@@ -8,10 +8,7 @@ public class CharacterPractice {
         // to perform actions on char values
         // isDigit , isLetter , isLetterOrDigit , isUpperCase  , isLowerCase
         // toUpperCase , toLowerCase
-        System.out.println("IS DIGIT METHOD PRACTICE ");
-        System.out.println(Character.isDigit('A'));
-        System.out.println(Character.isDigit(' '));
-        System.out.println(Character.isDigit('6'));
+
 
         String str = "A34B123C4X";
         // Get the number out of this String

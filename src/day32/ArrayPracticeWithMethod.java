@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class ArrayPracticeWithMethod {
     public static void main(String[] args) {
         // this is passing the array object directly into the method
-    arrayPrinterItems(new int[]{1,6,5,3,12,3});
+      arrayPrinterItems(new int[]{1,6,5,3,12,3});
+
         int[] scores = {2,5,8,23,4,5,6};
         arrayPrinterItems(scores);
 

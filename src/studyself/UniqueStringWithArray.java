@@ -1,23 +1,23 @@
 package studyself;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class UniqueStringWithArray {
     public static void main(String[] args) {
-        // Write a program that can print out the unique values from  String Array
-        //        Ex:
-        //            if arr -> {"a" , "a ", "b", "c", "c"}
-        //                output: b
-        String[] letter = {"A" , "A ", "B", "C", "C"};
-
-        int count=0;
-        for (int i = 0; i <letter.length ; i++) {
-            if(letter[i].equals(letter[2])){
-                count++;
-            }
+        Scanner scan = new Scanner(System.in);
+        int[][] matrix = new int[][]{ {scan.nextInt(), scan.nextInt(), scan.nextInt()},
+                {scan.nextInt(), scan.nextInt(), scan.nextInt()},
+                {scan.nextInt(), scan.nextInt(), scan.nextInt()}
+        };
+        int result=0;
+        for(int i=0; i<matrix.length; i++){
+            result+=matrix[i][i];
+            result-=matrix[i][(matrix.length-1)-i];
         }
-      if(count==1){
-          System.out.println(letter[2]);
-      }
+
+
+        // FINAL PRINT
+        System.out.println(Math.abs(result));
     }
 }
